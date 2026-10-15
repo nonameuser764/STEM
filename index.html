@@ -87,6 +87,14 @@
                 -webkit-backdrop-filter: blur(10px);
             }
         }
+        /* Tựa đề tự co theo bề rộng điện thoại để luôn nằm trên 1 dòng */
+        
+        @media (max-width: 639px) {
+            .hero-title {
+                font-size: 5.3vw;
+                white-space: nowrap;
+            }
+        }
         /* Custom Scrollbar */
         
          ::-webkit-scrollbar {
@@ -121,7 +129,7 @@
                 <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
                 <span>CẢM BIẾN SIÊU ÂM</span>
             </div>
-            <h1 class="text-3xl min-[400px]:text-4xl sm:text-6xl font-extrabold tracking-tight mb-2 sm:mb-6 leading-tight">
+            <h1 class="hero-title sm:text-6xl font-extrabold tracking-tight mb-2 sm:mb-6 leading-tight">
                 Mô Hình <span class="bg-gradient-to-r from-cyan-400 via-sky-300 to-purple-500 bg-clip-text text-transparent glow-text">Xe Tự Tránh Vật Cản</span>
             </h1>
         </div>
